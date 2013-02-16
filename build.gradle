@@ -1,0 +1,17 @@
+group = "com.echophase"
+
+apply plugin: 'java'
+apply plugin: 'idea'
+apply plugin: 'maven'
+
+repositories {
+    mavenLocal()
+    mavenCentral()
+}
+
+dependencies {
+    compile 'org.springsource.loaded:spring-loaded:1.1.1-dev'
+    testCompile 'javax.el:el-api:2.2.1-b04'
+}
+
+sourceCompatibility = "1.6"
